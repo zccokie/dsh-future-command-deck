@@ -1,0 +1,5 @@
+# dev material — kept locally, not part of the plugin
+/screenshots/
+node_modules/
+*.log
+.DS_Store

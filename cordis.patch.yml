@@ -1,0 +1,6 @@
+# Bundle patch: inserts this package as one loader row.
+# The Host half (index.js) is intentionally inert; the browser half (client.js)
+# owns every visual change, so the bundle also works on Hosts without a Web UI.
+- insert:
+    - id: future-command-deck
+      name: 'dsh-future-command-deck'

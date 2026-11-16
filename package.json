@@ -1,0 +1,60 @@
+{
+  "name": "dsh-future-command-deck",
+  "version": "1.8.0",
+  "type": "module",
+  "description": "A sci-fi command-deck skin for the DeepSeek Harness web shell: a workspace (sector) picker above the composer, a live-ops panel listing only the sessions that are still running, a per-session compass that turns each tool call into a bearing, focus mode, and a glass token layer over the light and dark palettes.",
+  "license": "MIT",
+  "author": "zccokie",
+  "homepage": "https://github.com/zccokie/dsh-future-command-deck#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zccokie/dsh-future-command-deck.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zccokie/dsh-future-command-deck/issues"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "theme",
+    "skin",
+    "command-deck",
+    "ui"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "screenshots.json",
+    "README.md",
+    "README.en.md",
+    "LICENSE",
+    "assets/icon-180.png",
+    "assets/screenshots"
+  ],
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.2.1-rc.2"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}
