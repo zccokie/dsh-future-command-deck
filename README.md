@@ -14,6 +14,8 @@ dsh plugin --profile desktop add github:zccokie/dsh-future-command-deck
 dsh plugin --profile desktop remove dsh-future-command-deck
 ```
 
+`desktop` 是桌面版使用的 profile 名；如果你在命令行里自己起 DSH，换成你自己的 profile 名（如 `--profile web`）。
+
 装好后进入 **设置 → 插件** 里能看到「未来指挥舱 / Future command deck」，界面自动换成指挥舱皮肤；
 想回原生界面，在插件页停用它即可（它卸载时会把 `<html>` 上挂的属性与样式全部摘掉）。
 

@@ -16,8 +16,11 @@ dsh plugin --profile desktop add github:zccokie/dsh-future-command-deck
 dsh plugin --profile desktop remove dsh-future-command-deck
 ```
 
+`desktop` is the profile the desktop app uses; if you drive DSH from the CLI, swap in
+your own profile name (e.g. `--profile web`).
+
 The bundle registers one inert Host row and one browser-side client plugin, so it
-works on any Harness 0.2.1-rc.2 or later. Disabling it in **Settings → Plugins**
+works on Harness 0.2.x and 0.3.x (from 0.2.1-rc.2). Disabling it in **Settings → Plugins**
 removes everything it added: the mode attribute on `<html>`, the injected
 stylesheet and every slot entry.
 
