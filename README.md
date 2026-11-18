@@ -3,6 +3,7 @@
 把 DeepSeek Harness 的 Web 界面改造成未来科技感的指挥台：
 
 ![战区选择 · 深色](assets/screenshots/01-sector-select.jpg)
+![赛博罗盘](assets/screenshots/05-cyber-compass.jpg)
 
 ## 安装
 
